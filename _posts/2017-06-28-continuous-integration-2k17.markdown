@@ -12,18 +12,18 @@ image-sm:
 
 Continuous Integration is one of the main practices in the Extreme Programming landscape, although through the years it has transcended beyond XP to become one of the most common *cool things* to have in your development team. Due to the availability of numerous and versatile automation  tools ([Jenkins](http://jenkins.io), [Travis](http://travis-ci.org), [Go](http://www.gocd.org), [AppVeyor](http://www.appveyor.com), [Bamboo](http://www.atlassian.com/software/bamboo), ...), continuously building and testing your codebase is just one of those things rapidly becoming a *commodity* more than a rare thing or a luxury good in the software development world.
 
-But continuous integration is much more than having the latest _automation gadget_ in place. The concept comes from the idea of constantly releasing internal versions of a whole system, with the aim to discover problems early and reveal design flaws. Kent Beck incorporated this idea, originally formulated by Grady Booch, into his list of _practices_. The definition of continuous integration, as written in _eXtreme Programming eXplained_ (1999) is the following:
+But continuous integration is much more than having the latest _automation gadget_ in place. The concept comes from the idea of constantly releasing internal versions of a whole system, with the aim to discover problems early and reveal design flaws. Kent Beck incorporated this idea, originally formulated by Grady Booch, into his collection of XP _practices_. The definition of continuous integration, as written in _eXtreme Programming eXplained_ (1999) is the following:
 
 >  Integrate and build the system many times a day, every time a task is completed.
 
-While, again, this seems something common or quotidian in our present day, think about what it could mean twenty years ago. Incorporate the following thought: Cruise, the first CI tool, was released years after the [C3 project](https://martinfowler.com/bliki/C3.html), and it probably wasn't nearly as functional as today's automation tools. This means in the early days of continuous integration it wasn't about the tools... because _there were no tools_ (well, no Jenkins or GoCD, that's for sure).
+While, again, this seems something common in our present day, think about what it could mean twenty years ago. Incorporate the following thought: CruiseControl, the first CI tool, was released years after the [C3 project](https://martinfowler.com/bliki/C3.html), and it probably wasn't nearly as functional as today's automation tools. This means that in the early days of continuous integration it wasn't about the tools... because _there were no tools_ (well, nothing remotely close to Jenkins or GoCD, that's for sure).
 
 <blockquote class="twitter-tweet" data-lang="es"><p lang="en" dir="ltr">I understand XP isn’t perfect, but simply implementing it as described in 1999 would improve so many teams.</p>&mdash; Steve_Hayes (@Steve_Hayes) <a href="https://twitter.com/Steve_Hayes/status/798775631613861888">16 de noviembre de 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-In its essence, CI is more about integrating ideas and obtaining feedback. Overwhelmed and amazed by the shiny features of the latest automation product, we sometimes forget this. After all, _Communication_ and _Feedback_ are two of the four values of XP,  and the sign in the wall says _people and interactions over processes and tools_, remember? Unfortunately, values are always harder to sell than practices, and it's definitely much easier to sell tools than principles.
+In its essence, CI is more about _integrating ideas and obtaining rapid feedback_. Overwhelmed and amazed by the shiny features of the latest automation product, we sometimes forget this. After all, _Communication_ and _Feedback_ are two of the four values of XP,  and the big sign in your wall says _people and interactions over processes and tools_, right? Unfortunately, values are always harder to sell than practices, and it's definitely much easier to sell tools than principles.
 
-#### Step One: Start with Version Control and Trunk-Based Development
+#### Start with Version Control and Trunk-Based Development
 
 <blockquote class="twitter-tweet" data-lang="es"><p lang="en" dir="ltr">Good account of Continuous Integration (aka Trunk-Based Development)  <a href="https://t.co/Ay1NmN3Q5q">https://t.co/Ay1NmN3Q5q</a></p>&mdash; Martin Fowler (@martinfowler) <a href="https://twitter.com/martinfowler/status/611297227596820481">17 de junio de 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -37,9 +37,9 @@ It is very interesting how the experienced XP and continuous integration practic
 <blockquote class="twitter-tweet" data-lang="es"><p lang="en" dir="ltr">after 10 years of giving talks on this, trunk-based development is still the idea that causes most controversy today! <a href="https://t.co/5EK7LQgvkh">pic.twitter.com/5EK7LQgvkh</a></p>&mdash; Jez Humble (@jezhumble) <a href="https://twitter.com/jezhumble/status/787866655598575616">17 de octubre de 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-While the trunk-based development stance generally is depicted as the opposite of _gitflow_, it is important to remark that pull requests and feature branches are perfectly compatible with trunk-based development. It's only the **frequency** of integration in the mainline what matters. According to this, workflows where weeks (or even months) pass until feature branches merge into master should be avoided.
+While the trunk-based development stance is generally depicted as an opposition to _gitflow_, it is important to remark that **pull requests and feature branches are perfectly compatible with trunk-based development**. It's only the **frequency** of integration in the mainline what matters. According to this, situations in which weeks (or even months) pass until feature branches are merged into master should be avoided.
 
-Embrace the **commit early and often** mantra, but also merge to the mainline as soon as possible, everyday if you can. Implement toggle mechanisms and make the design abstractions of your system cope with different features or lines of work. Checkout the Continuous Integration 
+Then, what can we do? Embracing the **commit early and often** mantra, but also **merge to the mainline as soon as possible**, everyday if you can. Implementing _toggle_ mechanisms and make the design abstractions of your system cope with different features or lines of work.
 
 
 #### Build automation is a team effort
