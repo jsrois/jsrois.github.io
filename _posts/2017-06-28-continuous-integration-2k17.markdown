@@ -8,10 +8,9 @@ categories:
 description: 
 image: https://unsplash.it/2000/1200?image=983
 image-sm:
-published: false
 ---
 
-[](http://)Continuous Integration is one of the main practices in the Extreme Programming landscape, although through the years it has transcended beyond XP to become one of the most common *cool things* to have in your development team. Due to the availability of numerous and versatile automation  tools ([Jenkins](http://jenkins.io), [Travis](http://travis-ci.org), [Go](http://www.gocd.org), [AppVeyor](http://www.appveyor.com), [Bamboo](http://www.atlassian.com/software/bamboo), ...), continuously building and testing your codebase is just one of those things rapidly becoming a *commodity* more than a rare thing or a luxury good in the software development world.
+Continuous Integration is one of the main practices in the Extreme Programming landscape, although through the years it has transcended beyond XP to become one of the most common *cool things* to have in your development team. Due to the availability of numerous and versatile automation  tools ([Jenkins](http://jenkins.io), [Travis](http://travis-ci.org), [Go](http://www.gocd.org), [AppVeyor](http://www.appveyor.com), [Bamboo](http://www.atlassian.com/software/bamboo), ...), continuously building and testing your codebase is just one of those things rapidly becoming a *commodity* more than a rare thing or a luxury good in the software development world.
 
 But continuous integration is much more than having the latest _automation gadget_ in place. The concept comes from the idea of constantly releasing internal versions of a whole system, with the aim to discover problems early and reveal design flaws. Kent Beck incorporated this idea, originally formulated by Grady Booch, into his list of _practices_. The definition of continuous integration, as written in _eXtreme Programming eXplained_ (1999) is the following:
 
@@ -53,7 +52,9 @@ Also, avoid creating CI-maintenance "tasks" or "tickets". Maintaining the contin
 
 One great thing about CI tools: they provide lots of different ways of notifying a broken build. Use this. You can send emails, Slack messages and all sort of messages. Go even beyond this if you can: use a TV monitor to continuously visualize your build dashboard. Put a giant traffic light in your workplace (yes, [there are teams doing that](https://wiki.jenkins.io/display/JENKINS/Traffic+Light+Plugin). Create specific [_Information Radiators_](http://alistair.cockburn.us/Information+radiator) for CI.
 
+> Optimism is an occupational hazard of programming. Feedback is the treatment. (Kent Beck)
 
+The goal of notifying broken builds loudly is not to shame anyone in the team, but to declare a temporary state of emergency where everyone can help. Of course, in such an 
 
 ##### CI Certification Test
 

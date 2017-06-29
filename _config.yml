@@ -1,32 +1,31 @@
-# Site settings
+---
 email: javier.sanchez.rois@gmail.com
-baseurl: ""
+baseurl: ''
 paginate: 5
 paginate_path: "/blog/page-:num"
 google_analytics: 
-
-# SEO settings
 title: 
 description: 
-url: ""
+url: ''
 twitter_username: jsrois
 default_img: 
-
-# Profile settings
 name: Javi
 profile_img: 
 profile: 
 social:
   github: jsrois
-
-# Build settings
-exclude: ["_screenshots", "Gemfile", "Gemfile.lock", "LICENSE.txt", "README.md"]
+  twitter: jsrois
+exclude:
+- _screenshots
+- Gemfile
+- Gemfile.lock
+- LICENSE.txt
+- README.md
 markdown: kramdown
-permalink: /:year/:month/:day/:title/
-
-# Sass
+permalink: "/:year/:month/:day/:title/"
 sass:
   style: compressed
-
-# Gems
-gems: [jekyll-paginate, jekyll-sitemap, octopress-autoprefixer]
+gems:
+- jekyll-paginate
+- jekyll-sitemap
+- octopress-autoprefixer
