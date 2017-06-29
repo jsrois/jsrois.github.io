@@ -54,7 +54,7 @@ One great thing about CI tools: they provide lots of different ways of notifying
 
 > Optimism is an occupational hazard of programming. Feedback is the treatment. (Kent Beck)
 
-The goal of notifying broken builds loudly is not to shame anyone in the team, but to declare a temporary state of emergency where everyone can help. Of course, in such an 
+The goal of notifying broken builds loudly is not to shame anyone in the team, but to declare a temporary state of emergency where everyone can help. There should be several of these emergencies everyday, and even if they are treated with the maximum priority, integration can be just put on hold (`git revert` ftw) if the situation requires it.
 
 ##### CI Certification Test
 
