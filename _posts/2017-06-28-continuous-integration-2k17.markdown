@@ -21,7 +21,7 @@ While, again, this seems something common in our present day, think about what i
 <blockquote class="twitter-tweet" data-lang="es"><p lang="en" dir="ltr">I understand XP isn’t perfect, but simply implementing it as described in 1999 would improve so many teams.</p>&mdash; Steve_Hayes (@Steve_Hayes) <a href="https://twitter.com/Steve_Hayes/status/798775631613861888">16 de noviembre de 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-In its essence, CI is more about _integrating ideas and obtaining rapid feedback_. Overwhelmed and amazed by the shiny features of the latest automation product, we sometimes forget this. After all, _Communication_ and _Feedback_ are two of the four values of XP,  and the big sign in your wall says _people and interactions over processes and tools_, right? Unfortunately, values are always harder to sell than practices, and it's definitely much easier to sell tools than principles.
+In its essence, CI is more about _integrating ideas and obtaining rapid feedback_. Overwhelmed and amazed by the shiny features of the latest automation product, we sometimes forget this. After all, _Communication_ and _Feedback_ are two of the four values of XP,  and the big sign in your wall says _people and interactions over processes and tools_, right? Unfortunately, values are always **harder to sell** than practices, and it's definitely much easier to sell tools than principles.
 
 #### Start with Version Control and Trunk-Based Development
 
