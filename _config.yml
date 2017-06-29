@@ -2,19 +2,20 @@
 email: javier.sanchez.rois@gmail.com
 baseurl: ''
 paginate: 5
-paginate_path: "/blog/page-:num"
+paginate_path: /blog/page-:num
 google_analytics: 
-title: 
+title: Detached Head
 description: 
 url: ''
 twitter_username: jsrois
 default_img: 
 name: Javi
-profile_img: 
-profile: 
+profile_img: /assets/images/perfil
+profile: This is Javi. He likes software and stuff. He though it was a good idea to
+  write this. Don't be too hard on him. He has a weak psyche.
 social:
-  github: jsrois
-  twitter: jsrois
+  github: https://github.com/jsrois
+  twitter: https://twitter.com/jsrois
 exclude:
 - _screenshots
 - Gemfile
@@ -22,7 +23,7 @@ exclude:
 - LICENSE.txt
 - README.md
 markdown: kramdown
-permalink: "/:year/:month/:day/:title/"
+permalink: /:year/:month/:day/:title/
 sass:
   style: compressed
 gems:
