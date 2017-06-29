@@ -5,7 +5,8 @@ date: '2017-06-28'
 categories:
 - ContinuousIntegration
 - XP
-description: 
+description: Continuous integration is much more than having the latest _automation
+  gadget_ in place. What makes a good CI?
 image: https://unsplash.it/2000/1200?image=983
 image-sm:
 ---
