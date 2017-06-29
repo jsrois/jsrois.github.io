@@ -1,5 +1,5 @@
 ---
-title: 'Continuous Integration values in 2017: hard to sell?'
+title: Continuous Integration Values (in 2017)
 layout: post
 date: '2017-06-28'
 categories:
@@ -37,31 +37,23 @@ It is very interesting how the experienced XP and continuous integration practic
 <blockquote class="twitter-tweet" data-lang="es"><p lang="en" dir="ltr">after 10 years of giving talks on this, trunk-based development is still the idea that causes most controversy today! <a href="https://t.co/5EK7LQgvkh">pic.twitter.com/5EK7LQgvkh</a></p>&mdash; Jez Humble (@jezhumble) <a href="https://twitter.com/jezhumble/status/787866655598575616">17 de octubre de 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-While the trunk-based development stance is generally depicted as an opposition to _gitflow_, it is important to remark that **pull requests and feature branches are perfectly compatible with trunk-based development**. It's only the **frequency** of integration in the mainline what matters. According to this, situations in which weeks (or even months) pass until feature branches are merged into master should be avoided.
+While the trunk-based development stance is generally depicted as an opposition to _gitflow_, it is important to remark that **pull requests and feature branches are perfectly compatible with trunk-based development**. It's only the **frequency** of integration in the mainline what matters. According to this, situations in which days, weeks (or even months) pass until feature branches are merged into master should be avoided.
 
-Then, what can we do? Embracing the **commit early and often** mantra, but also **merge to the mainline as soon as possible**, everyday if you can. Implementing _toggle_ mechanisms and make the design abstractions of your system cope with different features or lines of work.
+We must embrace the **commit early and often** mantra, but also **merge to the mainline as soon as possible**, everyday if you can. Good continuous integration involves implementing _toggle_ mechanisms and making the design abstractions of the system cope with different features or lines of work.
 
 
 #### Build automation is a team effort
 
-Putting the codebase management aside, it is also fundamental that each and everyone in the team accepts maintaining and improving automation as part of their routine. Do not put the whole CI effort over the shoulders of one of two people in the team. Having [Pipeline-As-Code](http://www.thoughtworks.com/radar/techniques/pipelines-as-code) mechanisms is great for that, as it is to include a Jenkinsfile or Travisfile into your repository that anyone in the team can modify. But this makes it part of the codebase now: keep it updated and keep it **clean** at all costs!
+Putting the codebase management aside, it is also fundamental that each and every member in the team accepts maintaining and improving automation as part of their routine. Do not put the whole CI effort over the shoulders of one of two people in the team. Having [Pipeline-As-Code](http://www.thoughtworks.com/radar/techniques/pipelines-as-code) mechanisms is great for that, as it is to include a Jenkinsfile or Travisfile into your repository that anyone in the team can modify. But this makes it part of the codebase now: keep it updated and keep it **clean** at all costs!
 
 Also, avoid creating CI-maintenance "tasks" or "tickets". Maintaining the continuous integration flow should be something implicit, just as writing tests or refactoring your codebase. If it's a task, it can be deferred or procrastinated in favour of other tasks. But if keeping continuous integration up to date is part of the team's culture, it will never be avoided.
 
 #### Visualize! Communicate!
 
-One great thing about CI tools: they provide lots of different ways of notifying a broken build. Use this. You can send emails, Slack messages and all sort of messages. Go even beyond this if you can: use a TV monitor to continuously visualize your build dashboard. Put a giant traffic light in your workplace (yes, [there are teams doing that](https://wiki.jenkins.io/display/JENKINS/Traffic+Light+Plugin). Create specific [_Information Radiators_](http://alistair.cockburn.us/Information+radiator) for CI.
+One great thing about CI tools: they provide lots of different ways of notifying a broken build. Use this. You can send emails, Slack messages and all sort of messages. Go even beyond this if you can: use a TV monitor to continuously visualize your build dashboard. Put a giant traffic light in your workplace (yes, [there are teams doing that](https://wiki.jenkins.io/display/JENKINS/Traffic+Light+Plugin)). Create specific [_Information Radiators_](http://alistair.cockburn.us/Information+radiator) for CI.
 
 > Optimism is an occupational hazard of programming. Feedback is the treatment. (Kent Beck)
 
-The goal of notifying broken builds loudly is not to shame anyone in the team, but to declare a temporary state of emergency where everyone can help. There should be several of these emergencies everyday, and even if they are treated with the maximum priority, integration can be just put on hold (`git revert` ftw) if the situation requires it.
+The goal of notifying broken builds loudly is not to shame anyone in the team, but to declare a temporary state of emergency where everyone can help. There should be normal to have several of these _small crises_ everyday, and even if they should be treated with maximum priority, integration can be just put on hold (e.g. `git revert`) if the situation requires it.
 
-##### CI Certification Test
-
-### From CI to CD and Pipelines
-
-In 2013, the CI scene went crazy with all sorts of new CI-As-a-service tools
-Today, Continuous Integration tools are going further to become "Continuous Delivery" 
-First, get Continuous Integration right
-
-So, what makes it a good continuous integration? The moment we embrace the practice of sharing our ideas and our code with the rest of our team continuously, we are keeping the spirit of continuous integration. And of course we have abanico de herramientas disponibles para ello.
+So, what makes a good CI? The practice of sharing our ideas and our code with the rest of our team continuously. Of course we have all sorts of tools  to help us, but embracing the true spirit of continuous integration is infinitely more valuable than all the tools in the world.
