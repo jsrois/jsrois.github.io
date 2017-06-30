@@ -33,6 +33,9 @@ Continuous integration does not even begin with the automation provided by tools
 
 Using version control the right way is the foundation for good continuous integration practice, no doubt about that. Consequently, there has been a lot of effort in discussing and defining the correct workflows or _branching models_ (e.g. when working with git repositories). This is precisely motivated for the need of integrating changes the best way possible.
 
+<blockquote class="twitter-tweet" data-lang="es"><p lang="en" dir="ltr">Anything with this picture isn&#39;t a best practise. Trunk-based development FTW // <a href="https://twitter.com/jezhumble">@jezhumble</a> <a href="https://t.co/Xk2ZmKwZQw">https://t.co/Xk2ZmKwZQw</a></p>&mdash; Dan North (@tastapod) <a href="https://twitter.com/tastapod/status/793520377293049856">1 de noviembre de 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 It is very interesting to see how the experienced XP and continuous integration practicioners advocate for [**trunk-based development**](https://paulhammant.com/2013/04/05/what-is-trunk-based-development/), in which integration is not deferred and conflict is not avoided. This is, again, much **harder to sell** than *branch-a-lot*, Pull Request-based workflows, specially when all these different tools and products are packed with lots of features related to branching models.
 
 <blockquote class="twitter-tweet" data-lang="es"><p lang="en" dir="ltr">after 10 years of giving talks on this, trunk-based development is still the idea that causes most controversy today! <a href="https://t.co/5EK7LQgvkh">pic.twitter.com/5EK7LQgvkh</a></p>&mdash; Jez Humble (@jezhumble) <a href="https://twitter.com/jezhumble/status/787866655598575616">17 de octubre de 2016</a></blockquote>
